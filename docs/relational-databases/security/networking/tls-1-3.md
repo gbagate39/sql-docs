@@ -32,7 +32,7 @@ Here's a list of algorithms and ciphers removed in TLS 1.3:
 - EXPORT-strength ciphers
 - DES
 - 3DES
-
+## Note: Do not disable TLS 1.2 protocol while implementing TLS 1.3 as it is still required to start SQL service at the moment.
 ## Related content
 
 - [Connect to SQL Server with strict encryption](connect-with-strict-encryption.md)
