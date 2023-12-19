@@ -33,6 +33,13 @@ Here's a list of algorithms and ciphers removed in TLS 1.3:
 - DES
 - 3DES
 
+## Additional information 
+Please note that there are multiple features in the SQL engine that still rely on TLS 1.2. 
+Therefore, we recommend not disabling the TLS 1.2 protocol when implementing TLS 1.3, as it is still required to start the SQL service. 
+This will help avoid the following error: 
+Error: 26011, Severity: 16, State: 1. The server was unable to initialize encryption because of a problem with a security library. 
+Please ensure that security.dll exists on the system.
+
 ## Related content
 
 - [Connect to SQL Server with strict encryption](connect-with-strict-encryption.md)
